@@ -1,22 +1,12 @@
+import { useState } from "react";
 import Avatar from "./components/avatar";
+import Count from "./components/count";
 
-const app = () => {
-  const user = {
-    name: "sơn",
-    role: "Student",
-  };
-
+const App = () => {
   return (
-    <>
-      <h1>Hello World</h1>
-      <h2>{user.name}</h2>
-      <Avatar
-        name={user.name}
-        user={user}
-        showInfo={() => console.log(user.name)}
-      ></Avatar>
-      ;
-    </>
+    <div>
+      <Count />
+    </div>
   );
 };
-export default app;
+export default App;

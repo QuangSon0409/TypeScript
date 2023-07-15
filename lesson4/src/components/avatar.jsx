@@ -5,13 +5,15 @@ const Avatar = (props) => {
     <div className="flex items-center">
       <h1>{name}</h1>
       <img
-        className="border-2 border-red-600 rounded-[50%]"
-        src="https://picsum.photos/id/237/50/50"
+        src="https://picsum.photos/536/354"
         alt=""
+        className="w-24 border-2 border-pink-600 rounded-[50%]"
       />
-      <p>FPOLY</p>
-      <button onClick={showInfo} className="bg-pink-600">
-        showInfo
+      <button
+        className="rounded border-4 border-orange-200 bg-sky-500/100 p-2  m-2"
+        onClick={showInfo}
+      >
+        Show Info
       </button>
     </div>
   );
